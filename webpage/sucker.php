@@ -35,3 +35,17 @@ isset($_POST["section_num"]) && $_POST["section_num"] != "(Select a selection)" 
 	<dt>Credit Card</dt>
 	<dd><?php echo $credit_card_num ?> (<?php echo $cCard ?>)</dd>
 </dl>
+<p>Here all suckers who have submitted here:</p>
+<?php
+	$file = file_get_contents("suckers.txt");
+	echo "<pre>".$file."</pre>";
+?>
+<?php  
+}else{ ?><h1>Sorry</h1><?php 
+		echo "You didn't fill out the form copmpletely!";?><a href="buyagrade.html"> Try again?</a>
+		<?php
+	}
+?>
+
+</body>
+</html>
