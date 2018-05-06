@@ -45,6 +45,7 @@ isset($_POST["section_num"]) && $_POST["section_num"] != "(Select a selection)" 
 		echo "You didn't fill out the form copmpletely!";?><a href="buyagrade.html"> Try again?</a>
 		<?php
 	}
+	
 ?>
 
 </body>
